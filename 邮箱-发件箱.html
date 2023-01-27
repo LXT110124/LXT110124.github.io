@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="shortcut icon" type="image/x-icon" href="https://img1.baidu.com/it/u=429171171,1558663938&fm=26&fmt=auto">
+		<title>邮箱-发件箱</title> 
+		<script type="text/javascript" src="js/Harbinyouxiang.js"></script>
+		<style>
+			#img1{
+				width:1200px;
+				height:200px;
+				position:relative;
+				left:165px;
+			}
+			.logo{
+				position:fixed;
+				border-radius:10px;
+				width:100px;
+				z-index:999;
+				}
+			#div1{
+				width:1200px;
+				height:50px;
+				background-color:rgba(73,146,191);
+				margin-top:-4px;
+				margin-left:165px;
+			}
+			#a1{
+				margin-left:70px;
+				font-family:"华文新魏";
+				font-size:30px;
+				text-decoration:none;
+				color:#FFFFFF;
+				margin-bottom: 5px;
+				position:relative;
+				top:10px;
+			}
+			#a1:hover{
+				background-color:#FFFFFF;
+				color:#000000;
+				border-radius:10px;
+				transition: background-color 3s,color 3s,border-radius 2s;
+			}
+			#div3{
+				width:250px;
+				height:450px;
+				background-color:rgba(101,158,201,0.3);
+				margin-top:-4px;
+				margin-left:165px;
+				border:rgba(0,0,255,0.7) solid 5px;
+			}
+			#a2{
+				font-size:25px;
+				font-weight:bold;
+				text-decoration:none;
+				color:skyblue;
+				position:relative;
+				top:20px;
+				left:75px;
+				/*border:#0000FF groove 4px;
+				border-radius:25%;*/
+			}
+			#a2:hover{
+				background-color:#FFFFFF;
+				color:#000000;
+				border-radius:10px;
+				border:#7171FF solid 3px;
+				transition:background-color 1.5s,color 1s,border-radius 1s,border 1s;
+			}
+			/*#a2:hover{
+				background-color:#0000FF;
+				color:white;
+				transition:background-color 1.5s,color 1s;
+			}*/
+			#a2_1{
+				font-size:25px;
+				font-weight:bold;
+				text-decoration:none;
+				color:skyblue;
+				position:absolute;
+				top:520px;
+				left:253px;
+				text-decoration:underline;
+				background-color:#FFFFFF;
+				color:#000000;
+				border-radius:10px;
+				border:#7171FF solid 3px;
+			}
+			#a2_1:hover{
+				background-color:#FFFFFF;
+				color:#000000;
+				border-radius:10px;
+				border:#7171FF solid 3px;
+				transition:background-color 1.5s,color 1s,border-radius 1s,border 1s;
+			}
+			#a2_2{
+				font-size:25px;
+				font-weight:bold;
+				text-decoration:none;
+				color:skyblue;
+				position:absolute;
+				top:590px;
+				left:253px;
+				/*border:#0000FF groove 4px;
+				border-radius:25%;*/
+			}
+			#a2_2:hover{
+				background-color:#FFFFFF;
+				color:#000000;
+				border-radius:10px;
+				border:#7171FF solid 3px;
+				transition:background-color 1.5s,color 1s,border-radius 1s,border 1s;
+			}
+			#a2_3{
+				font-size:25px;
+				font-weight:bold;
+				text-decoration:none;
+				color:skyblue;
+				position:absolute;
+				top:670px;
+				left:253px;
+				/*border:#0000FF groove 4px;
+				border-radius:25%;*/
+			}
+			#a2_3:hover{
+				background-color:#FFFFFF;
+				color:#000000;
+				border-radius:10px;
+				border:#7171FF solid 3px;
+				transition:background-color 1.5s,color 1s,border-radius 1s,border 1s;
+			}
+			/*#a2_3:hover{
+				background-color:#0000FF;
+				color:white;
+				transition:background-color 1.5s,color 1s;
+			}*/
+			
+			/*#m div{
+           color: #ffff;
+           font-size: 10px;
+           filter: blur(2px);
+           position: absolute;
+       }*/
+	      	.a3{
+	      		color:white;
+	      		position:relative;
+	      		top:12px;
+	      	}
+	      	#da{
+	      		position:relative;
+	      		top:12px;
+	      	}
+	      	#yonghu{
+	      		font-size:30px;
+	    		text-align:center;
+	    		font-weight:bold;
+	      	}
+	      	hr{
+	      		position:relative;
+	      		top:0px;
+	      	}
+	      	#div4{
+	      		width:936px;
+	      		height:450px;
+	      		margin-top:-460px;
+				margin-left:420px;
+				border:rgba(0,0,255,0.7) solid 5px;
+	      	}
+	      	#tishi{
+	      		font-size:30px;
+	      		font-family:"隶书";
+	      		margin-top:14px;
+	      		margin-left:10px;
+	      		font-weight:bold;
+	      		color:#FF0000
+	      	}
+	      	#jing{
+	      		font-size:25px;
+	      		font-family:"楷体";
+	      	}
+	      	#quxiao{
+	      		font-family:"华文新魏";
+	      		font-size:25px;
+	      		width:60px;
+	      		height:30px;
+	      		background-color:blue;
+	      		color:white;
+	      		margin-left:70px;
+	      	}
+	      	#queding{
+	      		font-family:"华文新魏";
+	      		font-size:25px;
+	      		width:100px;
+	      		height:30px;
+	      		background-color:gray;
+	      		color:white;
+	      		margin-left:190px;
+	      		margin-top:-30.5px;
+	      	}
+		</style>
+	</head>
+
+	<body id="m">
+		<img src="images/版权商标.png" class="logo"/>
+		<img src="images/Harbin信息网图标.png" id="img1"/>
+		<!-- 首个div(任务栏) -->
+		<div id="div1">
+			<a href="Harbin.html" id="a1">返回首页</a>
+			<a href="机构组成.html" id="a1" target="_blank">机构组成</a>
+			<a href="#" id="a1">分局概况</a>
+			<a href="#" id="a1">警官学苑</a>
+			<a href="#" id="a1">表格下载</a>
+			<a href="#" id="a1">法律法规</a>
+		</div>
+		<!-- 第二个div -->
+		<div style="background-color:rgb(101,158,201);margin-left: 165px;width: 1200px;height:55px;color:white;">
+			<span id="da">当前位置 ：</span><a href="Harbin.html" class="a3">首页</a><span id="da">></span>   <a href="#" class="a3">用户工作区</a> <span id="da">></span> <a href="#"class="a3">发件箱</a>
+		</div>
+		<!-- 第三个div(侧面功能) -->
+		<div id="div3">
+			<p id="yonghu">用户工作区</p>
+			<hr />
+			<div id="dl1"><a href="#" id="a2">收件箱</a></div>
+			<div id="dl2"><a href="#" id="a2_1">发件箱</a></div>
+			<div id="dl3"><a href="#" id="a2_2">已发送</a></div>
+			<div id="dl4"><a href="#" id="a2_3">草稿箱</a></div>
+		</div>
+		<div id="div4">
+			<form>
+				<span style="position:absolute;top:350px;left:455px;">收件人</span><input type="text" placeholder="请添加收件人" style="position: relative;top:29px;left:90px;width:510px;height:32px;"/>
+				<span style="position:absolute;top:405px;left:455px;">主题</span><input type="text" placeholder="请添加主题" style="position: relative;top:45px;left:90px;width:510px;height:32px;"/>
+				<div style="position: absolute;top:330px;left:1100px;width:264px;height:370px; border:gray 1.5px solid;">
+					<input type="checkbox" style="position: relative;top:15px;"/><p style="position: absolute;top:-2px;left:30px;">新建派出所</p>
+					<input type="checkbox" style="position: relative;top:65px;left:-24px;"/><p style="position: absolute;top:48px;left:30px;">花园派出所</p>
+					<input type="checkbox" style="position: relative;top:115px;left: -48px;"/><p style="position: absolute;top:98px;left:30px;">荣市派出所</p>
+					<input type="checkbox" style="position: relative;top:165px;left:-72px;"/><p style="position: absolute;top:148px;left:30px;">奋斗派出所</p>
+					<input type="checkbox" style="position: relative;top:215px;left:-96px;"/><p style="position: absolute;top:198px;left:30px;">邮政派出所</p>
+					<input type="checkbox" style="position: relative;top:265px;left:-120px;"/><p style="position: absolute;top:248px;left:30px;">燎原派出所</p>
+					<input type="checkbox" style="position: relative;top:315px;left:-144px;"/><p style="position: absolute;top:298px;left:30px;">文化派出所</p>		
+				</div>
+				<span style="position:absolute;top:470px;left:455px;">正文</span><textarea placeholder="请编辑正文,最多输入2000字" maxlength="2000" style="position: relative;top:75px;left:90px;width:510px;height:235px;font-size:20px;"></textarea>
+				<div style="background-color:skyblue;width:150px;height:35px;font-size: 25px;text-align: center;position: absolute;top:720px;left:570px;" id="fasong">发送</div>
+				
+				<div style="background-color:skyblue;width:200px;height:35px;font-size: 25px;text-align: center;position: absolute;top:720px;left:800px;" id="zhuanwei">转为草稿</div>
+				<div id="div5" style="width:400px;height: 270px;border:2px groove gray;position:absolute;top:200px;left:600px;background-color:white;display: none;">
+					<p id="tishi">提示</p>
+					<hr style="margin-top:-10px;"/>
+					<p id="jing">邮件发送后就不能更改了，是否发送？(如发送请等待5s后点击“确定”，如不发送请点击“取消”)</p>
+					<div id="quxiao">取消</div>
+					<div id="queding">确定(<span id="div6">5</span>s)</div>
+					<p style="color:green;">附：第二次就不用等待5s了。</p>
+					<script>
+						var num=document.getElementById("div6");
+						var d1=document.getElementById("queding");
+						var d2=document.getElementById("quxiao");
+						var d3=document.getElementById("div5");
+						var n=5;
+						var d4=document.getElementById("fasong");
+						var d5=document.getElementById("zhuanwei");
+						d4.onclick=function(){
+							d3.style.display="block";
+						}
+						d5.onclick=function(){
+							alert("转换成功！")
+						}
+						//定时器
+						var timer=setInterval(function(){
+							//更改内容
+							n--;
+							num.innerHTML=n;
+							if (n<=0){
+								clearInterval(timer);
+								d1.style.backgroundColor="rgb(237,189,101)";
+							}
+							d1.onclick=function(){
+								if (n<=0){
+									num.innerHTML=0;
+									d1.style.backgroundColor="rgb(237,189,101)";
+									alert("发送成功！请手动进入收件箱查看来信。")
+									d3.style.display="none";
+								}
+								else{
+									alert("倒计时未到，发送失败!")
+								}
+							}
+							d2.onclick=function(){
+								d3.style.display="none";
+							}
+						},1000)
+					</script>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

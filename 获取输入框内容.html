@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>码到成功</title>
+	</head>
+	<body>
+<input type="text" name="InputContent" id="inputText"  class="txt">
+<input class="send btnStlye" type="submit" id="send">
+
+<br/>
+<div id="talk" style="display: none;"><p>评论区</p><p>小童</p><p></p></div>
+
+		<script>
+			var sendBtn = document.getElementById("send");
+			var talk = document.getElementById("talk");
+			sendBtn.addEventListener("click", sendMsg);
+			function sendMsg(){
+				var inp = document.getElementById("inputText");
+				var c=document.createElement("div")
+				c.innerHTML=inp.value;
+				talk.append(c)
+				talk.style.display="inline-block"
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>jquery 如何获得跨页面的内容</title>
+<script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <%  var un = Request.QueryString["username"];%>
+　　
+
+<a href="../User/ViewUserVB.aspx?username=<% Response.Write(un); %>">用户VB</a>
+        
+</body>
+</html>
+

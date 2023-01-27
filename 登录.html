@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>登录</title>
+		<link rel="shortcut icon" type="image/x-icon" href="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.51miz.com%2FElement%2F00%2F77%2F69%2F12%2Ff479f8a6_E776912_7fc04959.png%21%2Fquality%2F90%2Funsharp%2Ftrue%2Fcompress%2Ftrue%2Fformat%2Fpng%2Ffh%2F630&refer=http%3A%2F%2Fimg.51miz.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1645183014&t=eadfe530cff453e191182ef062450363"> 
+		<style>
+			body{
+				background:url(images/密景1.jpg) no-repeat;
+				background-size:cover;
+			}
+			#div1{
+				width:570px;
+				height:400px;
+				position: absolute;
+				top:200px;
+				left:660px;
+				background-color:rgba(255,255,255,0.25);
+				border-radius:20px;
+				box-shadow: 0 0 10px lightgray;
+			}
+			#div1:hover{
+				width:570px;
+				height:400px;
+				position: absolute;
+				top:200px;
+				left:660px;
+				background-color:rgba(0,0,0,0.25);
+				border-radius:20px;
+			}
+			input{
+				font-size:35px;
+				font-family:"OCR A";
+				background-color:lightgray;
+				position:absolute;
+				left:50px;
+				border-radius:20px;
+			}
+			input:hover{
+				font-size:35px;
+				font-family:"OCR A";
+				background-color:gray;
+				position:absolute;
+				left:50px;
+				border-radius:20px;
+				border:groove 2px red;
+			}
+			#u{
+				position:absolute;
+				left:50px;
+				top:75px;
+			}
+			#P{
+				position:absolute;
+				left:50px;
+				top:150px;
+			}
+			span{
+				font-size:35px;
+				color:rgb(240,240,0);
+				font-family:"OCR A";
+			}
+			#h1{
+				font-family:"华文行楷";
+				font-size:50px;
+				position: absolute;
+				top:50px;
+				left:800px;
+			}
+			/*#d{
+				position:absolute;
+				left:50px;
+				top:133px;
+				font-size:32px;
+				font-family:"华文新魏";
+			}
+			#S{
+				position:absolute;
+				left:50px;
+				top:187px;
+				font-size:35px;
+				font-family:"OCR A";
+			}*/
+			#c{
+				position:absolute;
+				left:50px;
+				top:300px;
+				font-size:35px;
+			}
+			#i{
+				position:absolute;
+				left:50px;
+				top:224px;
+				font-size:35px;
+			}
+			#d2{
+				position:absolute;
+				left:70px;
+				top:280px;
+				font-size:10px;
+			}
+			#img{
+				position:absolute;
+				left:130px;
+				top:370px;
+			}
+			#li{
+				position:absolute;
+				left:185px;
+				top:420px;
+				color:white;
+				text-decoration:none;
+			}
+			#li:hover{
+				background-color:rgb(255,255,255);
+				border-radius:5px;
+				color:black;
+				text-decoration:overline;
+			}
+			#ii{
+				position:absolute;
+				left:265px;
+				top:415px;
+				color:white;
+				font-size:30px;
+			}
+			#wang{
+				position:absolute;
+				left:285px;
+				top:420px;
+				text-decoration:none;
+				color:white;
+			}
+			#wang:hover{
+				background-color:rgb(255,255,255);
+				border-radius:5px;
+				color:black;
+				text-decoration:overline;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="m" style="display: none;">
+			<span id="h1">账号注册/登录</span>
+			<div id="div1">
+				<form>
+					<input type="text" placeholder="User Name" id="u"/>
+					<input type="password" placeholder="Password,1~8 bits" id="P"/>
+					<!-- <input type="date" id="d"/>
+					<input type="text" placeholder="School/Work Unit" id="S"/> -->
+					<input type="password" placeholder="ID number" id="i"/>
+					<a href="Harbin.html" target="_self">
+						<img src="images/login.png" id="img"/>
+					</a>
+					
+					<a href="file:///D:/HTML/%E7%BD%91%E9%A1%B5%E9%A1%B9%E7%9B%AE(2)/%E6%B3%A8%E5%86%8C.html" id="li">立即注册</a>
+					<span id="ii">  |  </span>
+					<a href="file:///D:/HTML/%E7%BD%91%E9%A1%B5%E9%A1%B9%E7%9B%AE(2)/%E5%BF%98%E8%AE%B0%E5%AF%86%E7%A0%81.html" id="wang">忘记密码</a>
+				</form>
+				<div id="d3" style="position: absolute;top:190px;left:100px;"></div>
+				<img src="images/眼睛.png" style="display: inline-block;width:70px;position:absolute;top:135px;left:475px;" id="eye"/>
+				<img src="images/闭眼睛.png" style="display: none;width:70px;position:absolute;top:135px;left:475px;" id="ceye"/>
+			</div>
+		</div>
+		<script>
+			var m=document.getElementById("m");
+			var str=prompt("                                           请输入口令：")
+			if (str=="qq110"){
+				alert("口令正确，欢迎你~")
+				m.style.display="inline-block";
+			}
+			else{
+				alert("口令错误!")
+			}
+			var f=document.getElementById("P");
+			var d3=document.getElementById("d3")
+        	f.onblur=function(){
+        		var userName=f.value;
+        		var reg=/^[a-z0-9_]{1,8}$/
+        		if(reg.test(userName)){
+        			d3.innerHTML="☑密码符合基本要求"
+        			d3.style.color="lightgreen"
+        		}
+        		else{
+        			d3.innerHTML="✘密码不符合基本要求~"
+        			d3.style.color="red"
+        		}
+        		
+        	}
+        	var e=document.getElementById("eye");
+        	var ce=document.getElementById("ceye")
+        	var f=document.getElementById("P");
+        	e.onclick=function(){
+        		f.type="text";
+        		e.style.display="none";
+        		ce.style.display="inline-block";
+        	}
+        	ce.onclick=function(){
+        		f.type="password";
+        		e.style.display="inline-block";
+        		ce.style.display="none";
+        	}
+		</script>
+	</body>
+</html>

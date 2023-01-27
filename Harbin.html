@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8" />
+		<title>哈尔滨南岗分局公安网外网版</title>
+		<link rel="stylesheet" href="css/Harbin公安网.css" type="text/css" />
+		<link rel="shortcut icon" type="image/x-icon" href="images/警徽1.png"> 
+		<style>
+			#bg{
+				width: 1505px;
+				height: 703px;
+				border: 10px solid green;
+				z-index:-1111111111111111111111111110;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bg">
+			<p style="color: aliceblue;position: absolute;top:185px;z-index: 2; left: 120px;" id="p">
+				<span id="t"></span>
+			</p>
+			<script type="text/javascript">
+				var dd=document.getElementById("p");
+				var span=document.getElementById("t");
+				//时间拼接
+				setInterval(function(){
+					var year=new Date().getFullYear()
+					var month=new Date().getMonth()+1
+					var date=new Date().getDate()
+					var hour=new Date().getHours()
+					var min=new Date().getMinutes()
+					var s=new Date().getSeconds()
+					span.innerHTML=year+"年"+month+"月"+date+"日"+hour+"时"+min+"分"+s+"秒";
+				},1000)
+			</script>
+			<div class="head">
+				<!-- 导航栏 -->
+				<div id="fw">
+					<a id="close" style="position: relative;top: 10px;left: -5px;"  href="javascript: ;"><img src="images/关闭.png" title="关闭" style="width: 15px;"/></a>
+					<a href="file:///D:/%E6%89%80%E6%9C%89%E9%A1%B9%E7%9B%AE/Copy%20of%20%E5%93%88%E5%B0%94%E6%BB%A8%E5%85%AC%E5%AE%89%E7%BD%91/%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%AC%E6%8F%90%E9%86%92.html"><div id="imgx"><img src="images/版权商标.png" class="logo" title="版权商标" complete="complete"/></div></a>
+					
+				</div>
+				
+				<script>
+					var box = document.getElementById('fw');
+					var close=document.getElementById("close");
+					box.x=box.offsetLeft;
+					box.y=box.offsetTop;
+					box.speedx=0.3;
+					box.speedy=0.3;
+					setInterval(function(){
+						box.x+=box.speedx
+						box.y+=box.speedy
+						//左右弹
+						if (box.x>1450){
+							box.speedx=-0.3
+						}
+						else if(box.x<0){
+							box.speedx=0.3
+						}
+						//上下
+						if (box.y>653){
+							box.speedy=-1
+						}
+						else if(box.y<0){
+							box.speedy=0.3
+						}
+						//给到css
+						box.style.left=box.x+"px";
+						box.style.top=box.y+"px";
+					},10)
+					close.onclick=function(){
+						box.style.display="none";
+					}
+			</script>
+				<img src="images/奋斗百年路.png" id="fendou" title="奋斗百年路，启航新征程，同志们，加油！"/>
+				<span id = "qing">庆祝中国共产党成立<img src="images/100.jpg" title="庆祝中国共产党成立100周年！"/>周年</span>
+			</div>
+			<div class="z1body">
+				<!-- 信息网logo -->
+				<img src="images/Harbin信息网图标.png" style="width:1300px;" id="x" title="哈尔滨南岗公安信息网
+Harbin NanGang Public Security Informatiom Network"/>
+				<div class="z1.1body">
+					<!-- 第一块链接 -->
+					<a href="#" id="a1" title="网站首页">网站首页</a>
+					<a href="机构组成.html" id="a1" target="_blank" title="机构组成">机构组成</a>
+					<a href="#" id="a1" title="分局概况">分局概况</a>
+					<a href="#" id="a1" title="警官学苑">警官学苑</a>
+					<a href="#" id="a1" title="表格下载">表格下载</a>
+					<a href="#" id="a1" title="法律法规">法律法规</a>
+				</div>
+				<div class="z12body">
+					<audio controls="controls" id="audio">
+						<source src="images/语音 001.mp3" type="audio/mp3"></source>
+					</audio>
+					<marquee onmouseout="this.start()" onmouseover="this.stop()" direction="left" id="first-marquee" title="市局领导组织召开平安之夜大会战">
+						热烈庆祝中国共产党胜利召开党的第二十届全国代表大会！
+					</marquee>
+					<script>
+						var en=document.getElementById("first-marquee");
+						en.onclick=function(){
+							alert("国家主席习近平于北京人民大会堂胜利召开党的第二十届全国代表大会！")
+							en.style.color="purple";
+						}
+					</script>
+					<input type="text" placeholder="请输入关键字" id="u"  title="请输入关键字/词/句"/>
+					<a href="#"><img src="images/搜索.png" id="sousuo" title="搜索"/></a>
+				</div>
+				<div class="z13bodyleft">
+					<div id="d0" style="display: none;z-index: 2999999999999999999999999999999999999999999;background-color: rgba(0, 0, 0, 70%);">
+						<h3>寒风中的毅力</h3>
+					</div>
+					<img src="images/1.png" id="fywz"/>
+					<button id="btn1" style="background-color: purple;border:black solid 4px;position:absolute;top:742px;left:385px;">1</button>
+					<button id="btn2" style="background-color: purple;border:black solid 4px;position:absolute;top:742px;left:412px;">2</button>
+					<button id="btn3" style="background-color: purple;border:black solid 4px;position:absolute;top:742px;left:439px;">3</button>
+					<button id="btn4" style="background-color: purple;border:black solid 4px;position:absolute;top:742px;left:466px;">4</button>
+					<button id="btn5" style="background-color: purple;border:black solid 4px;position:absolute;top:742px;left:493px;">5</button>
+					<script>
+						var img=document.getElementById("fywz");
+						var n = 1;
+						setInterval(function() {
+							n++;
+							if (n > 5) {
+								n = 1;
+							}
+							img.src = "images/" + n + ".png";
+							img.style.width="500px";
+						},4500)
+						var btn1=document.getElementById("btn1");
+						var btn2=document.getElementById("btn2");
+						var btn3=document.getElementById("btn3");
+						var btn4=document.getElementById("btn4");
+						var btn5=document.getElementById("btn5");
+						btn1.onclick=function(){
+							img.src="images/1.png";
+						}
+						btn2.onclick=function(){
+							img.src="images/2.png";
+						}
+						btn3.onclick=function(){
+							img.src="images/3.png";
+						}
+						btn4.onclick=function(){
+							img.src="images/4.png";
+						}
+						btn5.onclick=function(){
+							img.src="images/5.png";
+						}
+						var d0=document.getElementById("d0");
+						img.onmouseover=function(){
+							if (img.src=="images/1.png"){
+								d0.style.display="inline-block";
+							}
+						}
+					</script>
+					<a href="信访攻坚.html" id="a2"><p id="y1">XX同志组织召开信访攻坚案件汇报会  [11-07]</p></a>
+					<a href="#" id="a2"><p id="y1">我局召开应对暴雪极端天气确保辖区…[11-07]</p></a>
+					<a href="#" id="a2"><p id="y1">XXX同志组织召开应对极寒天气工…[11-07]</p></a>
+					<a href="#" id="a2"><p id="y1">XXX同志组织召开分局信访攻坚案…  [11-06]</p></a>
+					<a href="#" id="a2"><p id="y1">南岗分局组织召开十九届六中全安…  [11-05]</p></a>
+					<a href="#" id="a2"><p id="y1">分局慰问平房分局奋战在抗击疫情一…  [11-05]</p></a>
+					<a href="#" id="a2"><p id="y1">XXX同志组织召开疫情流调工作协…  [11-04]</p></a>
+				</div>
+				<div class="z13bodyright">
+					<!-- 邮箱 -->
+					<img src="images/whitebg.jpg" style="width:300px;" id="bg-white-first"/>
+					<hr id="hr"/>
+					<p id='ps'>XX派出所</p>
+					<a id="tlogin" href="javascript:volid(0)" style="position:relative;top: -300px;left:550px;text-decoration: none;color:red;" title="点击以登录">[登录]</a>
+					<p id="you1" style="z-index: 15;">邮箱：<span id="l">0</span>封未读邮件</p>
+					<a href="file:///D:/%E6%89%80%E6%9C%89%E9%A1%B9%E7%9B%AE/Copy%20of%20%E5%93%88%E5%B0%94%E6%BB%A8%E5%85%AC%E5%AE%89%E7%BD%91/%E9%82%AE%E7%AE%B1-%E5%8F%91%E4%BB%B6%E7%AE%B1.html" target="_blank">
+						<img src="images/enter.png" id="e"/>
+					</a>
+					<div id="div5" style="display: none;position:absolute;">
+						<div style="color:red;font-weight: bold;font-size:25px;position:absolute;top:-305px;left: 410px;width:200px;height:35px;">登录</div>
+						<div style="position: absolute;top:-250px;left:410px;width:100px;height:45px;font-size: 20px;">用户名</div>
+						<p style="position: relative;top:-180px;left:410px;font-size: 20px;">密码</p>
+						<form>
+							<input type="text" style="border:1px red solid;width:200px;height:30px;position: absolute;top:-210px;left:410px;" id="yonghu">
+							<input type="password" style="border:1px red solid;width:200px;height:30px;position: absolute;top:-130px;left:410px;" id="password">
+							<input type="button" value="一键登录" style="background-color: red;border:1px red solid;position: absolute;top:-80px;left:450px;width:100px;height:35px;font-size:20px;" id="yijian">
+						</form>
+					</div>
+					<script>
+						var hr=document.getElementById("hr")
+						var ps=document.getElementById("ps")
+						var tlogin=document.getElementById("tlogin")
+						var you1=document.getElementById("you1")
+						var e=document.getElementById("e")
+						var div5=document.getElementById("div5")
+						var yijian=document.getElementById("yijian")
+						var yonghu=document.getElementById("yonghu")
+						tlogin.onclick=function(){
+							div5.style.display="inline-block";
+							ps.style.display="none";
+							tlogin.style.display="none";
+							you1.style.display="none";
+							e.style.display="none";
+							tlogin.innerHTML="[退出登录]"
+							tlogin.title="点击退出登录"
+						}
+						yijian.addEventListener("click", sendMsg);
+						function sendMsg(){
+							var inp = document.getElementById("yonghu");
+							var password=document.getElementById("password")
+							ps.innerHTML=inp.value;
+							div5.style.display="none";
+							ps.style.display="inline-block";
+							tlogin.style.display="inline-block";
+							you1.style.display="inline-block";
+							e.style.display="inline-block";
+							tlogin.innerHTML="[退出登录]"
+							tlogin.title="点击退出登录"
+							
+							if (inp.value=="Creator" || inp.value=="Li Xutong" || inp.value=="李旭桐" || inp.value=="lxt" || inp.value=="LXT"){
+								if (password.value=="110124"){
+									alert("Welcome,Xutong Li!")
+									ps.innerHTML="Creator LXT";
+								}
+								else{
+									alert("密码不正确！")
+									ps.innerHTML="获取失败"
+									tlogin.innerHTML="[登录]"
+								}
+							}
+							else{
+								alert("欢迎您，"+inp.value+'!')
+							}
+							if(inp.value=="新建" || inp.value=="新建派出所"){
+								if (password.value=="xj82518300"){
+									alert("隆重欢迎您，新建派出所！")
+								}
+								else{
+									alert("密码不正确！")
+									ps.innerHTML="获取失败"
+									tlogin.innerHTML="[登录]"
+								}
+							}
+						}
+						
+					</script>
+				</div>
+				<div class="z14body">
+					<!-- 图片新闻 -->
+						<img src="images/图片新闻.png" />
+						<marquee onmouseout="this.start()" onmouseover="this.stop()" direction="left" id="sq">
+							<img id="atu" src="images/图片新闻1.png" style="width: 400px;"/><div id="ats"><p>各派出所代表于小会议室宣读中国公安廉政誓言，</p></div>
+							<img id="atu1" src="images/图片新闻2.png" style="width: 400px;"/>
+							<img id="atu2" src="images/图片新闻3.png" style="width: 400px;height:270px;"/>
+							<img id="atu3" src="images/图片新闻4.png" style="width: 400px;"/>
+							<img id="atu4" src="images/图片新闻5.jpg" style="width: 400px;"/>
+							<img id="atu5" src="images/图片新闻6.jpg" style="width: 400px;height:270px;"/>
+							<img id="atu6" src="images/图片新闻7.jpg" style="width: 400px;"/>
+							<img id="atu7" src="images/图片新闻8.jpg" style="width: 400px;"/>
+							
+							<div id="ats2"></div>
+							<div id="ats3"></div>
+							<div id="ats4"></div>
+							<div id="ats5"></div>
+							<div id="ats6"></div>
+							<div id="ats7"></div>
+							<div id="ats8"></div>
+						</marquee> 
+						<script>
+							
+						</script>
+				</div>
+				
+				<div class="z15body">
+					<!-- 警情快讯 -->
+					<!-- <img src="images/whitebg.jpg" style="width:475px;height:400px;" id="wb1"/> -->
+					<div id="wb1">
+						<div id="wb11">警情快讯</div>
+						<div id="wb12">领导动态</div>
+						<div id="ul" style="display:block;">
+							<p><a href="https://mp.weixin.qq.com/s/TNJX57lXH07V1_cshL24zg" id="bao" target="_blank">以疫为令 动若风发 南岗公安分局全警…</a></p>
+							<p><a href="#">誓言铿锵！崭新气象！南岗公安分局集中...</a></p>
+							<p><a href="https://mp.weixin.qq.com/s/GM4QCBRBYVVaM9O3NUnxvQ" target="_blank">暮秋·战"疫"——南岗公安分局"疫"线掠影</a></p>
+							<p><a href="#">防疫反诈两手抓 生命财产全守护……</a></p>
+							<p><a href="#">南岗分局"十个强化"应对暴雪极端天气确...</a></p>
+							<p><a href="#">当好企业的服务员——南岗公安分局多措并...</a></p>
+						</div>
+						<div id="ul1" style="display:none;">
+							<p><a href="#" id="bao" target="_blank">2022/1/10领导动态</a></li>
+							<p><a href="#">2022/4/4领导动态</a></p>
+							<p><a href="#">2022/4/3领导动态</a></p>
+							<p><a href="#">2022/4/2领导动态</a></p>
+							<p><a href="#">2022/4/1领导动态</a></p>
+							<p><a href="#">2022/3/31领导动态</a></p>
+							<p><a href="#">2022/3/30领导动态</a></p>
+						</div>
+						<script>
+							var wb11=document.getElementById("wb11")
+							var wb12=document.getElementById("wb12")
+							var ul1=document.getElementById("ul")
+							var ul12=document.getElementById("ul1")
+						
+							wb12.onclick=function(){
+								ul1.style.display="none";
+								ul12.style.display="block";
+								wb12.style.backgroundColor="red";
+								wb12.style.textAlign="center";
+								wb11.style.backgroundColor="white";
+							}
+							wb11.onclick=function(){
+								ul1.style.display="block";
+								ul12.style.display="none";
+								wb11.style.backgroundColor="red";
+								wb11.style.textAlign="center";
+								wb12.style.backgroundColor="white";
+							}
+						</script>
+					</div>
+		
+					<div id="wb2">
+						<div id="wb21">每日动态</div>
+						<div id="wb22">通知通报</div>
+						<div id="ul2" style="display:block">
+							<p><a href="https://mp.weixin.qq.com/s/o5HLEn_93xGUJt4g-KsaBw" target="_blank">寒彻骨髓，暖入人心！南岗公安分局全警"...</a></li>
+							<p><a href="#">兵不避险 勇往直前！南岗公安分局星夜集结...</a></li>
+							<p><a href="#">晕倒在抗疫前线的瞬间，他把残疾的身躯矗...</a></li>
+							<p><a href="#">南岗公安分局迅速启动战时思想政治工作为...</a></li>
+							<p><a href="#">有一种高调"恩爱",叫"陪你一起抗击疫情"</a></li>
+							<p><a href="#">忠诚履职 守护平安 南岗公安分局中秋期间…</a></li>
+						</div>
+						<ul id="ul3" style="display:none;">
+							<p><a href="#">通知：市局已派发下流调电话名单，请于...</a></li>
+							<p><a href="#">为提升民警待遇，我局决定通知：各单位各...</a></li>
+							<p><a href="#">通知：市局领导组织召开“平安之夜”大会...</a></li>
+							<p><a href="#">通知：为优待民警，我局决定:《长津湖》...</a></li>
+							<p><a href="#">通知：我局在今日凌晨1:00时已派发下名...</a></li>
+							<p><a href="#">通知：我局要求各单位民警于2020/12/31…</a></li>
+						</ul>
+					</div>
+					<script>
+							var wb21=document.getElementById("wb21")
+							var wb22=document.getElementById("wb22")
+							var ul2=document.getElementById("ul2")
+							var ul3=document.getElementById("ul3")				
+							wb22.onclick=function(){
+								ul2.style.display="none";
+								ul3.style.display="block";
+								wb22.style.backgroundColor="red";
+								wb22.style.textAlign="center";
+								wb21.style.backgroundColor="white";
+							}
+							wb21.onclick=function(){
+								ul2.style.display="block";
+								ul3.style.display="none";
+								wb22.style.backgroundColor="white";
+								wb22.style.textAlign="center";
+								wb21.style.backgroundColor="red";
+							}
+						</script>
+				</div>
+				<a href="印象点滴.html" target="_blank">
+					<img src="images/印象点滴.png" style="width:160px;margin-top: 50px;" id="ca">
+				</a>
+				<a href="#">
+					<img src="images/置顶.png" style="width:70px;position:fixed;right:30px;bottom:30px;"/>
+				</a>
+				<img src="images/站点导航.png" style="width:250px;height:415px;position: absolute;top:1200px;left:1035px;" />
+				<div id="div1" style="width:120px;height:35px;border:groove red 1.5px;font-size: 20px;position: absolute;top:1310px;left:1100px;text-align: center;">
+					全国导航
+				</div>
+				<div id="div2" style="width:120px;height:35px;border:groove red 1.5px;font-size: 20px;position: absolute;top:1380px;left:1100px;text-align: center;">
+					全省导航
+				</div>
+				<div id="div3" style="width:120px;height:35px;border:groove red 1.5px;font-size: 20px;position: absolute;top:1450px;left:1100px;text-align: center;">
+					县区导航
+				</div>
+				<div id="div4" style="width:120px;height:35px;border:groove red 1.5px;font-size: 20px;position: absolute;top:1520px;left:1100px;text-align: center;">
+					局内导航
+				</div>
+				<div id="f1" style="display: none;position: absolute;top:1310px;left:685px;width:400px;height:150px;background-color: red;margin-left:20px;">
+					<a href="https://www.mps.gov.cn/" id="f1a" target="_blank">公安部</a>
+					<a href="http://gaj.beijing.gov.cn/" id="f1a" target="_blank">北京市</a>
+					<a href="https://gaj.sh.gov.cn/shga/index.html" id="f1a" target="_blank">上海市</a>
+					<a href="#" id="f1a">天津市</a>
+					<a href="#" id="f1a"">河北省</a>
+					<a href="#" id="f1a"">内蒙古</a>
+					<a href="#" id="f1a">浙江省</a>
+					<a href="#" id="f1a">江苏省</a>
+					<a href="#" id="f1a">安徽省</a>
+					<a href="#" id="f1a">山东省</a>
+					<a href="#" id="f1a">河南省</a>
+					<a href="#" id="f1a">广东省</a>
+					<a href="#" id="f1a">四川省</a>
+					<a href="#" id="f1a">重庆市</a>
+					<a href="#" id="f1a">甘肃省</a>
+					<a href="#" id="f1a">山西省</a>
+					<a href="#" id="f1a">辽宁省</a>
+					<a href="#" id="f1a">吉林省</a>
+					<a href="#" id="f1a">黑龙江</a>
+					<a href="#" id="f1a">福建省</a>
+				</div>
+				<script>
+					var d1=document.getElementById("div1");
+					var f=document.getElementById("f1");
+					d1.onmousemove=function(){
+						if (f.style.display="none"){
+							f.style.display="block";
+						}
+					}
+					f.onmousemove=function(){
+							f.style.display="block";
+						}
+					f.onmouseleave=function(){
+						f.style.display="none";
+					}
+				</script>
+			</div>
+		</div>
+	</body>
+</html>
